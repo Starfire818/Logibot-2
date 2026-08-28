@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+# NEVER commit real secrets to the repo — paste PATs only into Streamlit UI
+.streamlit/secrets.toml

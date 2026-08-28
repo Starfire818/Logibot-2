@@ -174,17 +174,23 @@ class LogisticsChatbot:
                         "helpful_bool",
                         "comment",
                     ])
-                writer.writerow([
+                row_values = [
                     _dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
                     str(user_msg)[:5000],
                     str(bot_reply)[:5000],
-                    "" if detected_intent is None else str(detected_intent),
-                    rating,
+                    "" if detected_intent is None else str(detected_intent)[:120],
+                    int(rating),
                     "" if helpful_bool is None else ("yes" if bool(helpful_bool) else "no"),
                     "" if comment_str in (None, "") else str(comment_str)[:5000],
-                ])
+                ]
+                writer.writerow(row_values)
+                # --- packaged-build: mirror row to configured cloud remotes ---
+                try:
+                    _ok_mirror, _report_mirror = _mirror_feedback_to_remotes(row_values)
+                except Exception:  # noqa: BLE001
+                    _ok_mirror, _report_mirror = False, "mirror skip"
             return True
-        except Exception:
+        except Exception as exc:  # pragma: no cover - never crash UI on I/O errors
             return False
 
     def load_artifacts(self):
@@ -1819,3 +1825,193 @@ class LogisticsChatbot:
         reply = self.get_bot_response(user_message)
         analysis = dict(self.last_nlp_analysis or self._empty_nlp_analysis())
         return reply, analysis
+
+# (packaged-build persistence marker)
+
+# =====================================================================
+# Packaged-build feedback persistence (injected by build.py)
+# =====================================================================
+# Writes are always mirrored to the local CSV first. If either Google
+# Sheets or GitHub secrets are configured, the same row is also written
+# remotely, surviving Streamlit Cloud container restarts / cold boots.
+#
+# Configuration (Streamlit Cloud → App Settings → Secrets):
+#
+#   (A) Google Sheets  --------------------------------------------------
+#   [connections.gsheets]
+#   type = "gsheets"
+#   spreadsheet = "https://docs.google.com/spreadsheets/d/XXXXXXXXX/edit"
+#   worksheet = "user_feedback"
+#   # Service account JSON (paste the entire GCP service-account object)
+#   [connections.gsheets.secrets_account]
+#   type = "service_account"
+#   project_id = "...."
+#   private_key_id = "...."
+#   private_key = "-----BEGIN PRIVATE KEY-----\n....\n-----END PRIVATE KEY-----\n"
+#   client_email = "xxxx@xxxx.iam.gserviceaccount.com"
+#   client_id = "...."
+#   auth_uri = "https://accounts.google.com/o/oauth2/auth"
+#   token_uri = "https://oauth2.googleapis.com/token"
+#   auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
+#   client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/xxxx%40xxxx.iam.gserviceaccount.com"
+#
+#   → Remember to share the Sheet with the client_email above as "Editor"
+#     and create a tab named exactly user_feedback with the CSV header row.
+#
+#   (B) GitHub CSV commit back to the repo  -----------------------------
+#   [github]
+#   token = "ghp_xxxxxxxxxxxxxxxxxxxx"        # Fine-grained PAT with "Contents: R/W" on your repo
+#   owner = "your-github-username"
+#   repo  = "your-repo-name"
+#   branch = "main"
+#   feedback_path = "data/user_feedback.csv"
+#
+# =====================================================================
+
+_FEEDBACK_COLS = [
+    "timestamp_utc",
+    "user_message",
+    "bot_reply",
+    "detected_intent",
+    "rating_1_5",
+    "helpful_bool",
+    "comment",
+]
+
+
+def _try_append_remote_gsheets(row: list) -> str | None:
+    """Return None on success, otherwise a short error reason."""
+    try:
+        import streamlit as st  # noqa: WPS433  (optional — in this build only)
+        from streamlit.connections import GSheetsConnection  # type: ignore
+    except Exception:  # noqa: BLE001
+        return "gsheets not available in this build"
+    try:
+        import streamlit as st  # noqa: WPS433
+        conn = st.connection("gsheets", type=GSheetsConnection)
+        import pandas as _pd
+        try:
+            existing = conn.read(worksheet="user_feedback", ttl=0)
+        except Exception:  # noqa: BLE001
+            existing = _pd.DataFrame(columns=_FEEDBACK_COLS)
+        new_row = _pd.DataFrame([dict(zip(_FEEDBACK_COLS, row))])
+        combined = _pd.concat([existing, new_row], ignore_index=True)
+        conn.update(worksheet="user_feedback", data=combined.reset_index(drop=True))
+        return None
+    except Exception as exc:  # noqa: BLE001
+        return f"gsheets: {type(exc).__name__}: {exc}"[:240]
+
+
+def _try_append_remote_github(row: list) -> str | None:
+    """Return None on success, otherwise a short error reason."""
+    try:
+        import streamlit as st  # noqa: WPS433
+        gh = st.secrets.get("github", {}) if hasattr(st, "secrets") else {}
+    except Exception:  # noqa: BLE001
+        gh = {}
+    if not gh or not gh.get("token") or not gh.get("repo"):
+        return "github secrets not configured"
+    try:
+        import base64 as _b64
+        import json as _json
+        import requests as _rq
+        token = gh["token"]
+        owner = gh.get("owner") or gh.get("repo", "/").split("/")[0]
+        repo = gh.get("repo").split("/")[-1] if "/" in gh.get("repo", "") else gh["repo"]
+        branch = gh.get("branch") or "main"
+        csv_path = gh.get("feedback_path") or "data/user_feedback.csv"
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        }
+        # Fetch current SHA and content for the file
+        api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{csv_path}"
+        resp = _rq.get(api_url, headers=headers, params={"ref": branch}, timeout=20)
+        sha, existing_b64 = None, ""
+        if resp.status_code == 200:
+            payload = resp.json()
+            sha = payload.get("sha")
+            existing_b64 = payload.get("content", "") or ""
+        elif resp.status_code != 404:
+            return f"github GET {resp.status_code}"
+        try:
+            import csv as _csv
+            existing_txt = (
+                _b64.b64decode(existing_b64).decode("utf-8")
+                if existing_b64 else ""
+            )
+            needs_header = (not existing_txt) or not existing_txt.strip()
+            import io as _io
+            buf = _io.StringIO(newline="")
+            writer = _csv.writer(buf, lineterminator="\n")
+            if needs_header:
+                writer.writerow(_FEEDBACK_COLS)
+            writer.writerow(row)
+            chunk = buf.getvalue()
+            if existing_txt and not existing_txt.endswith("\n"):
+                existing_txt += "\n"
+            new_txt = existing_txt + chunk
+            new_b64 = _b64.b64encode(new_txt.encode("utf-8")).decode("ascii")
+            message = "chore(user_feedback): append 1 row from chatbot session"
+            body = {"message": message, "content": new_b64, "branch": branch}
+            if sha:
+                body["sha"] = sha
+            put = _rq.put(api_url, headers=headers, data=_json.dumps(body), timeout=30)
+            if put.status_code in (200, 201):
+                return None
+            return f"github PUT {put.status_code}: {put.text[:200]}"
+        except Exception as exc_inner:  # noqa: BLE001
+            return f"github encode: {type(exc_inner).__name__}: {exc_inner}"[:200]
+    except Exception as exc:  # noqa: BLE001
+        return f"github: {type(exc).__name__}: {exc}"[:240]
+
+
+def _mirror_feedback_to_remotes(row: list) -> tuple[bool, str]:
+    """Try all configured remote writers. Returns (any_success, human_report)."""
+    any_success = False
+    parts: list[str] = []
+    # Google Sheets
+    err_gs = _try_append_remote_gsheets(row)
+    if err_gs is None:
+        any_success = True
+        parts.append("Google Sheets: OK")
+    elif "not configured" in err_gs or "not available" in err_gs:
+        pass  # silently skip — user hasn't set this backend up
+    else:
+        parts.append(f"Google Sheets: FAIL ({err_gs})")
+    # GitHub CSV commit
+    err_gh = _try_append_remote_github(row)
+    if err_gh is None:
+        any_success = True
+        parts.append("GitHub: OK")
+    elif "not configured" in err_gh:
+        pass
+    else:
+        parts.append(f"GitHub: FAIL ({err_gh})")
+    return any_success, " | ".join(parts) if parts else "no remote backend configured — local only"
+
+
+def _persistence_status() -> dict:
+    """Check which feedback backends are currently reachable / configured.
+
+    Used by the chat sidebar to display the current persistence tier.
+    """
+    status = {"local_csv": True, "gsheets_configured": False, "github_configured": False}
+    try:
+        import streamlit as st  # noqa: WPS433
+        try:
+            st.connection("gsheets")
+            status["gsheets_configured"] = True
+        except Exception:  # noqa: BLE001
+            pass
+        try:
+            gh = st.secrets.get("github", {})
+            if gh.get("token") and gh.get("repo"):
+                status["github_configured"] = True
+        except Exception:  # noqa: BLE001
+            pass
+    except Exception:  # noqa: BLE001
+        pass
+    return status
+
