@@ -165,12 +165,14 @@ def normalize_dataset(df):
     df["intent"] = df["intent"].astype(str).str.strip()
     df["utterance"] = df["utterance"].astype(str).str.strip()
     intent_aliases = {
-        "Tracking": "tracking_request",
-        "tracking": "tracking_request",
-        "track order": "tracking_request",
-        "Track Order": "tracking_request",
-        "estimated delivery": "estimated_delivery",
-        "ETA": "estimated_delivery",
+        "tracking_request": "Tracking",
+        "tracking": "Tracking",
+        "track order": "Tracking",
+        "Track Order": "Tracking",
+        "estimated_delivery": "Delivery",
+        "estimated delivery": "Delivery",
+        "ETA": "Delivery",
+        "Delivery": "Delivery",
         "expedite delivery": "expedite_delivery",
         "expedite": "expedite_delivery",
     }

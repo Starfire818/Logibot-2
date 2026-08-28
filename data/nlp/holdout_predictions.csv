@@ -1,36 +1,36 @@
 user_input,expected_intent,predicted_intent,correct,decision_confidence,decision_margin,preprocessed
-Who pays for return shipping?,Returns,Payment,False,0.0897,0.0011,who pay return ship
-Do you have live chat?,General,Typos,False,0.0617,0.0455,live chat
-When will TRK1010 arrive?,estimated_delivery,estimated_delivery,True,0.1668,1.0842,when trk1010 arrive
-Why is my delivery late?,Delivery,Typos,False,0.0856,0.1674,why my delivery late
-Can you deliver to the moon?,Weird,Delivery,False,0.0954,0.2509,deliver moon
-Can you find my package?,tracking_request,Weird,False,0.0909,0.0117,find my package
-帮我修一下,Typos,Typos,True,0.0617,0.0455,帮我修一下
-Someone stole my parcel.,Missing Parcel,tracking_request,False,0.0972,0.2077,someone steal my parcel
-Do you have warehouse services?,Business,Complaint,False,0.1074,0.346,warehouse service
-Please deliver to my office instead.,Address Change,Delivery,False,0.085,0.0288,deliver my office instead
-解决一下,General,Typos,False,0.0617,0.0455,解决一下
-预计何时送达,estimated_delivery,Typos,False,0.0617,0.0455,预计何时送达
-Can you expedite my delivery?,expedite_delivery,expedite_delivery,True,0.1355,0.7333,expedite my delivery
-包裹什么时候送到,estimated_delivery,Typos,False,0.0617,0.0455,包裹什么时候送到
-But I have not received it,Missing Parcel,Missing Parcel,True,0.098,0.2022,not receive
-Can you stop time until my parcel arrives?,Weird,estimated_delivery,False,0.1373,0.5993,stop time until my parcel arrive
-Your courier was rude.,Complaint,Delivery,False,0.1069,0.3195,courier rude
-I need an update on my shipment,tracking_request,Returns,False,0.0773,0.0015,need update my shipment
-Can I get a discount?,Shipping Cost,Damaged Parcel,False,0.1066,0.2576,get discount
-How long does international shipping take?,International,Shipping Cost,False,0.1609,0.8321,how long international ship take
-Speed up delivery,expedite_delivery,expedite_delivery,True,0.2676,1.7504,speed up delivery
-Can I get today's tracking update?,tracking_request,tracking_request,True,0.1102,0.5254,get today 's track update
-When is pickup available?,Pickup,Pickup,True,0.1066,0.04,when pickup available
-This is ridiculous!,Angry,Typos,False,0.0617,0.0455,ridiculous
-How do I make a claim?,Damaged Parcel,expedite_delivery,False,0.0776,0.0465,how make claim
-My parcel didn't arrive today.,Delivery,estimated_delivery,False,0.1092,0.3269,my parcel n't arrive today
-Can you teleport my package?,Weird,Weird,True,0.0909,0.0117,teleport my package
-Trck plz,Typos,Typos,True,0.0617,0.0455,trck plz
-Please track my parcel,tracking_request,tracking_request,True,0.2788,1.7666,track my parcel
-修复一下,Typos,Typos,True,0.0617,0.0455,修复一下
-商家显示已签收但我没收到,Missing Parcel,Typos,False,0.0617,0.0455,商家显示已签收但我没收到
-Can I change the recipient?,Address Change,Returns,False,0.0866,0.0653,change recipient
-Your company is useless!,Angry,Typos,False,0.0617,0.0455,company useless
-What does 'Out for Delivery' mean?,tracking_request,estimated_delivery,False,0.0741,0.0112,what 'out delivery mean
-Do you accept cards?,Payment,Typos,False,0.0617,0.0455,accept card
+Where should I leave my parcel?,Pickup,Tracking,False,0.1004,0.2526,where leave my parcel
+Can you fix it,Typos,Typos,True,0.1895,1.2899,fix
+My parcel is invisible.,Weird,Tracking,False,0.1036,0.2854,my parcel invisible
+How can I contact support?,General,Returns,False,0.0964,0.1143,how contact support
+Do you have warehouse services?,Business,Complaint,False,0.1136,0.3513,warehouse service
+Please speed up delivery,expedite_delivery,expedite_delivery,True,0.264,1.7118,speed up delivery
+Anyone there?,Typos,Typos,True,0.0661,0.0434,anyone there
+What time will my package be delivered?,Delivery,Weird,False,0.1198,0.4317,what time my package deliver
+Someone stole my parcel.,Missing Parcel,Tracking,False,0.1036,0.2854,someone steal my parcel
+Your courier was rude.,Complaint,Delivery,False,0.0941,0.1311,courier rude
+Is cash on delivery available?,Payment,Delivery,False,0.1255,0.4547,cash delivery available
+包裹什么时候送到,Delivery,Typos,False,0.0661,0.0434,包裹什么时候送到
+Do you deliver at night?,Delivery,Delivery,True,0.0862,0.1301,deliver night
+Will I pay import tax?,International,Payment,False,0.2011,1.3479,pay import tax
+Who pays for return shipping?,Returns,Payment,False,0.115,0.3267,who pay return ship
+Track my parcel please,Tracking,Tracking,True,0.2739,1.7238,track my parcel
+How do I make a claim?,Damaged Parcel,expedite_delivery,False,0.0806,0.0209,how make claim
+When will it arrive?,Delivery,Delivery,True,0.2051,1.2535,when arrive
+What does 'Out for Delivery' mean?,Tracking,Delivery,False,0.0887,0.0444,what 'out delivery mean
+Can you deliver underwater?,Weird,Delivery,False,0.0862,0.1301,deliver underwater
+Where is my parcel?,Tracking,Angry,False,0.1226,0.2386,where my parcel
+Can you track my order?,Tracking,Tracking,True,0.2155,1.3441,track my order
+Can I change the recipient?,Address Change,Returns,False,0.0915,0.0662,change recipient
+Your company is useless!,Angry,Typos,False,0.0661,0.0434,company useless
+几时到？,Delivery,Delivery,True,0.1407,0.9225,几时到
+Where should I report a missing parcel?,Missing Parcel,Missing Parcel,True,0.0836,0.069,where report miss parcel
+This is ridiculous!,Angry,Typos,False,0.0661,0.0434,ridiculous
+Is shipping included?,Shipping Cost,International,False,0.127,0.3299,ship include
+Please deliver to my office instead.,Address Change,General,False,0.0881,0.0488,deliver my office instead
+Can I send my homework instead?,Weird,Weird,True,0.136,0.7115,send my homework instead
+解决一下,General,Typos,False,0.0661,0.0434,解决一下
+It says delivered but I didn't get it,Missing Parcel,Missing Parcel,True,0.1726,1.1319,say deliver n't get
+Parcel??,Typos,Tracking,False,0.0829,0.1018,parcel
+Can you speed up my order?,expedite_delivery,expedite_delivery,True,0.142,0.6832,speed up my order
+Can I get today's tracking update?,Tracking,Tracking,True,0.1256,0.5679,get today 's track update

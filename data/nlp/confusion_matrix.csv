@@ -1,19 +1,18 @@
-,Address Change,Angry,Business,Complaint,Damaged Parcel,Delivery,General,International,Missing Parcel,Payment,Pickup,Returns,Shipping Cost,Typos,Weird,estimated_delivery,expedite_delivery,tracking_request
-Address Change,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
-Angry,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0
-Business,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Complaint,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Damaged Parcel,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-Delivery,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-General,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0
-International,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-Missing Parcel,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1
-Payment,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-Pickup,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-Returns,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-Shipping Cost,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-Typos,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0
-Weird,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0
-estimated_delivery,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0
-expedite_delivery,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
-tracking_request,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,2
+,Address Change,Angry,Business,Complaint,Damaged Parcel,Delivery,General,International,Missing Parcel,Payment,Pickup,Returns,Shipping Cost,Tracking,Typos,Weird,expedite_delivery
+Address Change,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+Angry,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+Business,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Complaint,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Damaged Parcel,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Delivery,0,0,0,0,0,3,0,0,0,0,0,0,0,0,1,1,0
+General,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+International,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Missing Parcel,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0
+Payment,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Pickup,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Returns,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Shipping Cost,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Tracking,0,1,0,0,0,1,0,0,0,0,0,0,0,3,0,0,0
+Typos,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0
+Weird,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0
+expedite_delivery,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

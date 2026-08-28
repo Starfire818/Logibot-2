@@ -1,138 +1,138 @@
 intent,utterance
-Angry,I want my money back!
+Delivery,When will my parcel arrived?
+Tracking,Has my parcel been delivered?
 Complaint,Nobody answered my calls.
-Business,I want a business account.
-Business,Can I integrate your API?
-Typos,please fix my order status
+General,然后我要他聪明一点
+Tracking,Track my parcel
+Angry,I want my money back!
 Business,Can I schedule daily pickups?
-Missing Parcel,I never received it.
-Typos,ASAP please
-International,What documents are needed?
-expedite_delivery,Please speed up delivery
-Missing Parcel,Can you investigate?
-Damaged Parcel,The box is crushed.
-Delivery,Do you deliver at night?
-Missing Parcel,It says delivered but I didn't get it
-Address Change,Can I change my address?
-Address Change,I forgot to include my apartment number.
+Business,Can I integrate your API?
+Delivery,Can the courier call me?
+Delivery,Is my parcel arriving today?
+Business,I want a business account.
+Tracking,I want to track my parcel
 Angry,Explain this now!
-expedite_delivery,Speed up my delivery
-Missing Parcel,My package never arrived
-General,Where is your office?
-Typos,Parcel??
-Pickup,Can I reschedule pickup?
-tracking_request,Where is my parcel?
-estimated_delivery,什么时候能收到我的包裹
-Payment,Is cash on delivery available?
-estimated_delivery,What is the estimated delivery time?
-estimated_delivery,几时到？
-expedite_delivery,Speed up delivery TRK1010
-International,My parcel is stuck at customs.
-expedite_delivery,Please rush my parcel
-Typos,Hello??
+Address Change,I forgot to include my apartment number.
+Delivery,My parcel didn't arrive today.
+Typos,Trck plz
+Missing Parcel,I never received it.
+Tracking,Is my parcel still moving?
+Weird,Can I send my grandma?
+Missing Parcel,商家显示已签收但我没收到
+Damaged Parcel,The box is crushed.
 Address Change,My postcode is incorrect.
-Weird,Can my dog sign for the parcel?
-Missing Parcel,I still haven't received my order
-estimated_delivery,Is my parcel arriving today?
-estimated_delivery,我的包裹什么时候到？
-Shipping Cost,Is shipping included?
-tracking_request,Is my parcel still moving?
+Tracking,Where's my parcel?
+expedite_delivery,Make the delivery faster
 General,这些句子无法被chatbot理解
-tracking_request,Track order
-Delivery,Is weekend delivery available?
+Returns,How do I return my parcel?
+Payment,Do you accept cards?
+Returns,Where is my refund?
+General,What are your working hours?
+Weird,My package is haunted.
+General,请帮我查一下包裹
+Typos,系统无法识别这些句子
+Missing Parcel,My parcel is missing.
+General,Are you open today?
+Weird,Can you stop time until my parcel arrives?
+Delivery,Can you deliver tomorrow instead?
 Damaged Parcel,The item inside is broken.
 Damaged Parcel,Can I get compensation?
-tracking_request,Where exactly is my package now?
-tracking_request,我的快递到哪了
-Typos,No update
-Missing Parcel,快递没送到我手上
+expedite_delivery,I need express delivery
+expedite_delivery,Please expedite this shipment
+Shipping Cost,Why is shipping so expensive?
+expedite_delivery,Please rush my parcel
 Complaint,I want to complain.
-tracking_request,I want to track my parcel
-International,Is customs included?
-General,然后我要他聪明一点
-International,Will I pay import tax?
-Weird,Can I send my homework instead?
+Weird,Can my dog sign for the parcel?
+Delivery,Is weekend delivery available?
+Missing Parcel,My package never arrived
+Delivery,预计何时送达
 Angry,I've been waiting for days!
-Typos,系统无法识别这些句子
-Returns,I changed my mind.
-Returns,How do I return my parcel?
-Returns,Can I cancel my shipment?
-Delivery,Is delivery available today?
-Typos,Fix it
-General,请帮我查一下包裹
-Returns,Where is my refund?
-Pickup,I missed the pickup.
+Pickup,Can you pick up my parcel?
+Pickup,When is pickup available?
+Tracking,Track my package
+International,How long does international shipping take?
+Delivery,When will my parcel arrive?
+Tracking,My tracking hasn't updated.
+Delivery,What is the estimated delivery time?
 Complaint,Your service is terrible.
-Weird,Can I send my grandma?
-Weird,Can you send my parcel through a time machine?
+Tracking,Can you track my shipment?
+Delivery,When should I expect my delivery?
+Missing Parcel,I still haven't received my order
+Address Change,Can I change my address?
+Weird,Is my parcel allergic to rain?
+Missing Parcel,我还没有收到包裹
+Typos,my parcel not come
+Delivery,什么时候送到？
 Business,Do you offer bulk shipping?
 Angry,I'm never using your service again!
-Shipping Cost,Why is shipping so expensive?
-expedite_delivery,I need express delivery
-General,Are you open today?
-Complaint,I wasted my whole day waiting.
-tracking_request,我的包裹在哪里？
-Payment,Why was my payment rejected?
-Shipping Cost,Do you offer free shipping?
-Typos,Can you fix it
-expedite_delivery,Please expedite this shipment
-estimated_delivery,When should I expect my delivery?
-estimated_delivery,When will my parcel arrive?
-Missing Parcel,It says delivered but I didn't get it.
-Weird,Can you ship a dinosaur?
-Complaint,I'm very disappointed.
-tracking_request,Track my order
-Missing Parcel,我还没有收到包裹
-Weird,Can you deliver underwater?
-Weird,My package is haunted.
-estimated_delivery,What time will my package be delivered?
-Typos,Why????
-Payment,Can I pay cash?
-expedite_delivery,Make the delivery faster
-Address Change,I entered the wrong address.
-General,What are your working hours?
-Angry,Where is my package?!
-estimated_delivery,什么时候送到？
-Payment,Can I pay later?
-tracking_request,Track my parcel please
-Missing Parcel,Where should I report a missing parcel?
-Weird,My parcel is invisible.
-estimated_delivery,When will it arrive?
-Delivery,Can you deliver tomorrow instead?
-Pickup,Can you pick up my parcel?
-Typos,Wher is my pakage?
-Damaged Parcel,My parcel arrived damaged.
-tracking_request,包裹状态更新了吗
-Missing Parcel,My parcel is missing.
-tracking_request,What does 'In Transit' mean?
-General,How can I contact support?
-tracking_request,Track my package
-Angry,This is unacceptable!
-tracking_request,我想查快递状态
-Typos,my parcel not come
-Shipping Cost,How much is shipping?
-tracking_request,My tracking hasn't updated.
-Address Change,I moved to a new house.
-estimated_delivery,When will my parcel arrived?
-Typos,Late again
-tracking_request,Can you track my order?
-tracking_request,我想知道快递现在在哪
-Delivery,Can the courier call me?
-Address Change,Can I update my phone number?
-estimated_delivery,When will it be delivered?
-tracking_request,Track order please
-estimated_delivery,几时到
-Weird,Did the courier eat my package?
-Weird,Is my parcel allergic to rain?
-tracking_request,Can you track my shipment?
-tracking_request,Has my parcel been delivered?
-tracking_request,Why is my parcel stuck?
-Typos,Help
+Tracking,Track my order
 Delivery,Can I choose a delivery time?
-Typos,Anyone there?
+Complaint,I wasted my whole day waiting.
+expedite_delivery,Speed up my delivery
+International,What documents are needed?
+Payment,Why was my payment rejected?
+Weird,Can you ship a dinosaur?
+Typos,Fix it
+Typos,Why????
+Tracking,包裹状态更新了吗
 International,Do you ship internationally?
-expedite_delivery,Can you speed up my order?
-tracking_request,Where's my parcel?
+Shipping Cost,How much is shipping?
+Complaint,I'm very disappointed.
+Typos,帮我修一下
+International,Is customs included?
+Shipping Cost,Do you offer free shipping?
+Tracking,Why is my parcel stuck?
+Tracking,我的快递到哪了
+Shipping Cost,Can I get a discount?
+International,My parcel is stuck at customs.
+Typos,修复一下
+Address Change,I entered the wrong address.
+Delivery,什么时候能收到我的包裹
+Angry,Where is my package?!
+Tracking,Where exactly is my package now?
+Missing Parcel,Can you investigate?
+Typos,Late again
+General,Do you have live chat?
+Tracking,我想知道快递现在在哪
+Tracking,Track order
+Delivery,几时到
+Missing Parcel,It says delivered but I didn't get it.
+Returns,I changed my mind.
+Damaged Parcel,My parcel arrived damaged.
+Weird,Can you deliver to the moon?
+General,Where is your office?
+Typos,ASAP please
+Delivery,Why is my delivery late?
+Typos,please fix my order status
+Angry,This is unacceptable!
+Typos,Wher is my pakage?
+Pickup,I missed the pickup.
+Payment,Can I pay cash?
+Weird,Can you send my parcel through a time machine?
+Address Change,I moved to a new house.
+Tracking,我想查快递状态
+Returns,Can I cancel my shipment?
+Typos,Help
 Delivery,Can I collect it myself?
-tracking_request,Track my parcel
-Pickup,Where should I leave my parcel?
+Address Change,Can I update my phone number?
+Tracking,Please track my parcel
+Weird,Can you teleport my package?
+Tracking,我的包裹在哪里？
+Tracking,Can you find my package?
+Tracking,Track order please
+Typos,No update
+Weird,Did the courier eat my package?
+Pickup,Can I reschedule pickup?
+expedite_delivery,Speed up delivery
+Delivery,When will it be delivered?
+Tracking,I need an update on my shipment
+Delivery,Is delivery available today?
+Typos,Hello??
+expedite_delivery,Speed up delivery TRK1010
+expedite_delivery,Can you expedite my delivery?
+Missing Parcel,But I have not received it
+Delivery,我的包裹什么时候到？
+Missing Parcel,快递没送到我手上
+Delivery,When will TRK1010 arrive?
+Tracking,What does 'In Transit' mean?
+Payment,Can I pay later?

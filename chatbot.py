@@ -19,20 +19,23 @@ import nlp_preprocess  # noqa: F401 — required so the pickled TF-IDF tokenizer
 from nlp_evaluation import linear_svc_decision_scores
 from nlp_preprocess import preprocess_text
 
-# ---------------------------------------------------------------------------
-# Injected by build.py — packaged __file__-relative path resolution so the
-# deploy/ folder works regardless of what CWD Streamlit Cloud launches from.
-# ---------------------------------------------------------------------------
-_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def _resolve_path(rel_path: str) -> str:
-    abs_path = os.path.join(_BASE_DIR, rel_path)
-    if os.path.exists(abs_path):
-        return abs_path
-    if os.path.exists(rel_path):
-        return os.path.abspath(rel_path)
-    return abs_path
+    """Resolve a project-relative path to an absolute path.
 
+    Used both by the source tree and the Streamlit Cloud deploy package.
+    Always resolves against the directory that contains chatbot.py so that
+    ``streamlit run app.py`` (cwd = project root) and direct ``python
+    chatbot.py`` execution both locate data/model assets correctly.
+    """
+    base = os.path.dirname(os.path.abspath(__file__))
+    candidate = os.path.join(base, rel_path)
+    if os.path.exists(candidate) or os.path.isdir(os.path.dirname(candidate)):
+        return candidate
+    cwd_candidate = os.path.abspath(rel_path)
+    if os.path.exists(cwd_candidate):
+        return cwd_candidate
+    return candidate
 
 
 class LogisticsChatbot:
@@ -69,8 +72,8 @@ class LogisticsChatbot:
             "previous_intent": None,
         }
         self._actionable_intents = {
-            "tracking_request",
-            "estimated_delivery",
+            "Tracking",
+            "Delivery",
             "expedite_delivery",
             "order_summary",
         }
@@ -277,13 +280,13 @@ class LogisticsChatbot:
                         self.reply_examples[intent_name.strip()] = records
 
         if "Tracking" in self.intent_examples:
-            self.intent_examples.setdefault("tracking_request", self.intent_examples["Tracking"])
+            self.intent_examples.setdefault("Tracking", self.intent_examples["Tracking"])
         if "Delivery" in self.intent_examples:
-            self.intent_examples.setdefault("estimated_delivery", self.intent_examples["Delivery"])
+            self.intent_examples.setdefault("Delivery", self.intent_examples["Delivery"])
         if "Tracking" in self.reply_examples:
-            self.reply_examples.setdefault("tracking_request", self.reply_examples["Tracking"])
+            self.reply_examples.setdefault("Tracking", self.reply_examples["Tracking"])
         if "Delivery" in self.reply_examples:
-            self.reply_examples.setdefault("estimated_delivery", self.reply_examples["Delivery"])
+            self.reply_examples.setdefault("Delivery", self.reply_examples["Delivery"])
 
     def _normalize_intent_name(self, intent_name):
         """Normalize model labels so they match the response template keys."""
@@ -295,14 +298,14 @@ class LogisticsChatbot:
         normalized = re.sub(r"\s+", " ", normalized)
 
         aliases = {
-            "track order": "tracking_request",
-            "track": "tracking_request",
-            "tracking": "tracking_request",
-            "tracking request": "tracking_request",
+            "track order": "Tracking",
+            "track": "Tracking",
+            "tracking": "Tracking",
+            "tracking request": "Tracking",
             "expedite delivery": "expedite_delivery",
             "expedite": "expedite_delivery",
-            "estimated delivery": "estimated_delivery",
-            "eta": "estimated_delivery",
+            "estimated delivery": "Delivery",
+            "eta": "Delivery",
             "order summary": "order_summary",
             "order lookup": "order_summary",
             "delivery options": "Delivery",
@@ -592,7 +595,7 @@ class LogisticsChatbot:
                 reply = ("What is your order tracking ID? Please share a tracking number like TRK1001 "
                        "and I can look up the estimated delivery time for you. You can also include it directly, "
                        "e.g. \"When will TRK1001 arrive?\"")
-            return reply, 'estimated_delivery', 0.95
+            return reply, 'Delivery', 0.95
 
         if tracking_id not in self.mock_db:
             if source == 'memory':
@@ -607,7 +610,7 @@ class LogisticsChatbot:
             else:
                 reply = (f"{memory_note_en}but no records exist in our database, so I cannot retrieve "
                        f"the estimated delivery time right now. Please verify that the tracking number is correct.)")
-            return reply, 'estimated_delivery', 0.95
+            return reply, 'Delivery', 0.95
 
         order_info = self.mock_db[tracking_id]
         raw_eta = order_info.get('eta')
@@ -628,7 +631,7 @@ class LogisticsChatbot:
                 reply = (f"{memory_prefix_en}"
                        f"I could not find an estimated delivery date for {tracking_id} right now. "
                        f"The parcel is currently {order_status.lower()} and heading to {destination}.")
-            return reply, 'estimated_delivery', 0.98
+            return reply, 'Delivery', 0.98
 
         if use_chinese:
             if str(raw_eta).strip().lower() == 'completed':
@@ -649,7 +652,7 @@ class LogisticsChatbot:
                     f"It is currently {str(order_status).lower()} and heading to {destination}."
                 )
 
-        return reply, 'estimated_delivery', 1.0
+        return reply, 'Delivery', 1.0
 
     def _is_tracking_status_query(self, user_message, cleaned_message):
         """Return True if message is asking about parcel location/status/tracking (not ETA)."""
@@ -764,9 +767,9 @@ class LogisticsChatbot:
 
         reply = self._build_natural_order_summary(order_info, tracking_id, focus=focus, use_chinese=use_cn)
         if focus == 'eta':
-            return reply, 'estimated_delivery', 1.0
+            return reply, 'Delivery', 1.0
         if focus == 'status':
-            return reply, 'tracking_request', 1.0
+            return reply, 'Tracking', 1.0
         return reply, 'order_summary', 1.0
 
     def _get_response_for_intent(self, predicted_intent):
@@ -1039,12 +1042,12 @@ class LogisticsChatbot:
         if use_chinese:
             if intent == 'expedite_delivery':
                 return "好的，我可以帮你加快配送。请提供追踪号码，例如 TRK1010。"
-            if intent == 'estimated_delivery':
+            if intent == 'Delivery':
                 return "请问你的订单追踪号码是什么？请提供类似 TRK1010 的追踪号，我就可以查询预计送达时间。"
             return "好的，我可以帮你查询包裹。请提供追踪号码，例如 TRK1010。"
         if intent == 'expedite_delivery':
             return "I can help speed up the delivery. Please share the tracking number, for example TRK1010."
-        if intent == 'estimated_delivery':
+        if intent == 'Delivery':
             return "I can check the estimated delivery time. Please share the tracking number, for example TRK1010."
         return "I can help you track the parcel. Please share the tracking number, for example TRK1010."
 
@@ -1144,19 +1147,19 @@ class LogisticsChatbot:
 
         meaning = self._meaning_key(cleaned_message)
         phrase_intents = {
-            'track my parcel': 'tracking_request',
-            'track order': 'tracking_request',
-            'track my order': 'tracking_request',
-            'track my package': 'tracking_request',
-            'please track my parcel': 'tracking_request',
-            'i want to track my parcel': 'tracking_request',
-            'track parcel': 'tracking_request',
+            'track my parcel': 'Tracking',
+            'track order': 'Tracking',
+            'track my order': 'Tracking',
+            'track my package': 'Tracking',
+            'please track my parcel': 'Tracking',
+            'i want to track my parcel': 'Tracking',
+            'track parcel': 'Tracking',
             'speed up delivery': 'expedite_delivery',
             'speed up my delivery': 'expedite_delivery',
             'please speed up delivery': 'expedite_delivery',
-            'when will it arrive': 'estimated_delivery',
-            'when will it be delivered': 'estimated_delivery',
-            'when will it be deliver': 'estimated_delivery',
+            'when will it arrive': 'Delivery',
+            'when will it be delivered': 'Delivery',
+            'when will it be deliver': 'Delivery',
         }
         if meaning in phrase_intents:
             return phrase_intents[meaning]
@@ -1190,14 +1193,14 @@ class LogisticsChatbot:
         if self._is_expedite_query(user_message, cleaned_message):
             return 'expedite_delivery'
         if self._is_eta_query(user_message, cleaned_message):
-            return 'estimated_delivery'
+            return 'Delivery'
         # Explicit "what's happening / what's going on with delivery" -> tracking (not ETA, not expedite)
         if re.search(r'\bwhat\b.*\b(happen|happening|going on|status|update|wrong)\b.*\b(delivery|parcel|package|order|shipment)\b', clean_msg):
-            return 'tracking_request'
+            return 'Tracking'
         if self._is_tracking_status_query(user_message, cleaned_message):
-            return 'tracking_request'
+            return 'Tracking'
         if re.search(r'^\s*track(\s+(my\s+)?(parcel|package|order|shipment|delivery))?\s*$', cleaned_message, re.I):
-            return 'tracking_request'
+            return 'Tracking'
         if self._is_bare_identifier_message(cleaned_message):
             return 'order_summary'
         return None
@@ -1206,22 +1209,22 @@ class LogisticsChatbot:
         use_chinese = self._contains_chinese(cleaned_message)
         if intent == 'expedite_delivery':
             return self._handle_expedite_delivery(user_message, cleaned_message, tracking_id, source=source or 'message')
-        if intent == 'estimated_delivery':
+        if intent == 'Delivery':
             reply, eta_intent, conf = self._handle_eta_query(user_message, cleaned_message, force=True)
-            return reply, 'estimated_delivery', conf or 0.96
-        if intent == 'tracking_request':
+            return reply, 'Delivery', conf or 0.96
+        if intent == 'Tracking':
             if tracking_id is None:
-                return self._ask_for_tracking_id('tracking_request', use_chinese), 'tracking_request', 0.96
+                return self._ask_for_tracking_id('Tracking', use_chinese), 'Tracking', 0.96
             reply, _, conf = self._handle_tracking_only_query(
                 user_message, cleaned_message, tracking_id, source=source or 'message'
             )
             if source == 'memory' and reply:
                 prefix = f"我记得你之前提到过 {tracking_id}。" if use_chinese else f"I'll continue with {tracking_id} from earlier. "
                 reply = prefix + reply
-            return reply, 'tracking_request', conf or 0.96
+            return reply, 'Tracking', conf or 0.96
         if intent == 'order_summary':
             if tracking_id is None:
-                return self._ask_for_tracking_id('tracking_request', use_chinese), 'order_summary', 0.9
+                return self._ask_for_tracking_id('Tracking', use_chinese), 'order_summary', 0.9
             return self._handle_tracking_only_query(
                 user_message, cleaned_message, tracking_id, source=source or 'message'
             )
@@ -1265,28 +1268,28 @@ class LogisticsChatbot:
 
         # ---------- PRIORITY 1: ETA / Arrival query -> estimated_delivery ----------
         if self._is_eta_query(user_message, cleaned_strip):
-            return "estimated_delivery", 0.22
+            return "Delivery", 0.22
 
         if re.search(r'\b(when|will|what\s+time|when\s+will|by\s+when)\b', clean_msg) and \
            re.search(r'\b(arrive|arrives|arrived|deliver|delivers|delivered|get|receive|receives|received|delivery|come|comes|came|reach|reaches|reached)\b', clean_msg):
-            return "estimated_delivery", 0.20
+            return "Delivery", 0.20
 
         # ---------- PRIORITY 2: Tracking / Status / Location queries ----------
         if re.search(r'\b(where|location|position)\b', clean_msg) and \
            re.search(r'\b(parcel|package|order|shipment|it)\b', clean_msg):
-            return "tracking_request", 0.20
+            return "Tracking", 0.20
 
         if re.search(r'\b(track|tracking)\b', clean_msg):
-            return "tracking_request", 0.22
+            return "Tracking", 0.22
 
         # IMPORTANT: Noun part must be parcel/package/order/shipment, NOT "my" or "the" —
         # otherwise "update the shipping address" hits tracking_request because update∈{status,update,check}
         # and "the" matches the loose noun part.
         if re.search(r'\b(track|tracking|status|update|check)\b.*\b(parcel|package|order|shipment)\b', clean_msg):
-            return "tracking_request", 0.20
+            return "Tracking", 0.20
 
         if self._is_tracking_status_query(user_message, cleaned_strip):
-            return "tracking_request", 0.20
+            return "Tracking", 0.20
 
         # ---------- PRIORITY 3: Missing Parcel ONLY when user explicitly reports missing/lost ----------
         missing_explicit = [
@@ -1335,7 +1338,7 @@ class LogisticsChatbot:
 
         # ---------- PRIORITY 4: General keyword fallback (weaker confidence) ----------
         intent_keywords = {
-            "tracking_request": (["where is my parcel", "where is my package",
+            "Tracking": (["where is my parcel", "where is my package",
                                 "package status", "shipment status", "in transit", "out for delivery",
                                 "status update", "track my parcel", "track order", "track my order",
                                 "包裹", "快递", "在哪里", "在哪儿"], 0.18),
@@ -1431,7 +1434,7 @@ class LogisticsChatbot:
             # Priority: compound patterns first (when+arrive, missing+received, etc.)
             if (re.search(r"\b(wen|when|wht|what|tim|time|date|day|soon|today|tomorrow|eta|estimat)\b", lowered)
                     and re.search(r"\b(arriv|arrive|delivr|deliver|delivry|reach|get|com|come)\b", lowered)):
-                return "estimated_delivery"
+                return "Delivery"
             if (re.search(r"\b(miss|lost|stole|stolen|nevr|never|didnt)\b.*\b(receiv|receive|arriv|arrive|delivr|deliver)\b", lowered)
                     or re.search(r"\b(not|didnt|never)\b.*\b(get|receiv|receive)\b", lowered)
                     or "没收到" in lowered or "未收到" in lowered or "找不到" in lowered or "丢了" in lowered):
@@ -1460,13 +1463,13 @@ class LogisticsChatbot:
                 return "expedite_delivery"
             if (re.search(r"\b(wher|where|track|trck|trak|status|statu|location|updat|update|in transit|out for delivery)\b", lowered)
                     and re.search(r"\b(parcel|packag|pakage|order|ordr|shipment|shipmnt|delivry|delivery)\b", lowered)):
-                return "tracking_request"
+                return "Tracking"
             eta_kw = [
                 "when", "wen", "arrive", "arriv", "time", "date", "day", "soon", "today", "tomorrow",
                 "什么时候", "几时", "预计", "到达", "送到", "estimate", "eta",
             ]
             if any(kw in lowered for kw in eta_kw):
-                return "estimated_delivery"
+                return "Delivery"
             tracking_kw = [
                 "parcel", "package", "parcl", "pakage", "pakkage", "order", "ordr",
                 "shipment", "shipmnt", "track", "trck", "trak", "where", "wher",
@@ -1474,7 +1477,7 @@ class LogisticsChatbot:
                 "包裹", "快递", "在哪", "状态",
             ]
             if any(kw in lowered for kw in tracking_kw):
-                return "tracking_request"
+                return "Tracking"
 
         return raw_intent
 
@@ -1616,6 +1619,22 @@ class LogisticsChatbot:
             semantic_intent = last_intent
 
         tracking_id, source = self._resolve_tracking_id(cleaned_message)
+
+        if tracking_id is not None and semantic_intent is None:
+            reply, focus_intent, conf = self._handle_tracking_only_query(
+                user_message, cleaned_message, tracking_id, source=source or 'message'
+            )
+            if reply is not None:
+                chosen = focus_intent if focus_intent in self._actionable_intents else 'Tracking'
+                return self._finalize_response(
+                    reply, chosen, conf or 0.96, tracking_id=tracking_id, order_id=order_in_message,
+                    nlp_analysis={
+                        "nlp_method": "Rule-based NLP (tracking ID presence + orders.csv lookup)",
+                        "fallback_used": False,
+                        "preprocessed_text": preprocess_text(cleaned_message),
+                    },
+                )
+
         if semantic_intent in self._actionable_intents:
             reply, intent_name, conf = self._dispatch_logistics_intent(
                 semantic_intent, user_message, cleaned_message, tracking_id, source
@@ -1721,11 +1740,11 @@ class LogisticsChatbot:
 
         if str(normalized_intent).lower() == 'delivery' and self._is_eta_query(user_message, cleaned_message):
             reply, intent_name, conf = self._dispatch_logistics_intent(
-                'estimated_delivery', user_message, cleaned_message, tracking_id, source
+                'Delivery', user_message, cleaned_message, tracking_id, source
             )
             if reply is not None:
                 return self._finalize_response(
-                    reply, 'estimated_delivery', conf or 0.95, tracking_id=tracking_id,
+                    reply, 'Delivery', conf or 0.95, tracking_id=tracking_id,
                     nlp_analysis={
                         **ml_trace,
                         "nlp_method": "Rule-based NLP (regex) over LinearSVC",
@@ -1764,6 +1783,11 @@ class LogisticsChatbot:
             fallback_intent, fallback_score = self._fallback_similarity_intent(model_message)
             if fallback_intent is not None:
                 normalized_fallback = self._normalize_intent_name(fallback_intent)
+                core = {"Tracking", "Delivery", "Address Change", "Damaged Parcel",
+                        "Missing Parcel", "Returns", "expedite_delivery", "order_summary"}
+                if normalized_fallback not in core and float(fallback_score) < 0.50:
+                    normalized_fallback = "Weird"
+                    fallback_score = max(float(fallback_score), 0.25)
                 reply = self._generate_nlp_reply(normalized_fallback, cleaned_message)
                 return self._finalize_response(
                     reply, normalized_fallback, float(fallback_score), tracking_id=tracking_id,

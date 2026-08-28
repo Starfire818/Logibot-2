@@ -1,11 +1,11 @@
 {
-  "accuracy": 0.3142857142857143,
-  "precision_macro": 0.24074074074074073,
-  "recall_macro": 0.24444444444444446,
-  "f1_macro": 0.21587301587301588,
-  "precision_weighted": 0.33333333333333337,
-  "recall_weighted": 0.3142857142857143,
-  "f1_weighted": 0.2816326530612245,
+  "accuracy": 0.37142857142857144,
+  "precision_macro": 0.19747899159663862,
+  "recall_macro": 0.22745098039215686,
+  "f1_macro": 0.20261437908496732,
+  "precision_weighted": 0.31768707482993197,
+  "recall_weighted": 0.37142857142857144,
+  "f1_weighted": 0.3295238095238095,
   "classification_report": {
     "Address Change": {
       "precision": 0.0,
@@ -38,10 +38,10 @@
       "support": 1.0
     },
     "Delivery": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1-score": 0.0,
-      "support": 2.0
+      "precision": 0.42857142857142855,
+      "recall": 0.6,
+      "f1-score": 0.5,
+      "support": 5.0
     },
     "General": {
       "precision": 0.0,
@@ -57,8 +57,8 @@
     },
     "Missing Parcel": {
       "precision": 1.0,
-      "recall": 0.3333333333333333,
-      "f1-score": 0.5,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
       "support": 3.0
     },
     "Payment": {
@@ -68,9 +68,9 @@
       "support": 1.0
     },
     "Pickup": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
       "support": 1.0
     },
     "Returns": {
@@ -85,10 +85,16 @@
       "f1-score": 0.0,
       "support": 1.0
     },
+    "Tracking": {
+      "precision": 0.42857142857142855,
+      "recall": 0.6,
+      "f1-score": 0.5,
+      "support": 5.0
+    },
     "Typos": {
-      "precision": 0.25,
-      "recall": 1.0,
-      "f1-score": 0.4,
+      "precision": 0.3333333333333333,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.4444444444444444,
       "support": 3.0
     },
     "Weird": {
@@ -97,35 +103,23 @@
       "f1-score": 0.4,
       "support": 3.0
     },
-    "estimated_delivery": {
-      "precision": 0.25,
-      "recall": 0.3333333333333333,
-      "f1-score": 0.2857142857142857,
-      "support": 3.0
-    },
     "expedite_delivery": {
       "precision": 0.6666666666666666,
       "recall": 1.0,
       "f1-score": 0.8,
       "support": 2.0
     },
-    "tracking_request": {
-      "precision": 0.6666666666666666,
-      "recall": 0.4,
-      "f1-score": 0.5,
-      "support": 5.0
-    },
-    "accuracy": 0.3142857142857143,
+    "accuracy": 0.37142857142857144,
     "macro avg": {
-      "precision": 0.24074074074074073,
-      "recall": 0.24444444444444446,
-      "f1-score": 0.21587301587301588,
+      "precision": 0.19747899159663862,
+      "recall": 0.22745098039215686,
+      "f1-score": 0.20261437908496732,
       "support": 35.0
     },
     "weighted avg": {
-      "precision": 0.33333333333333337,
-      "recall": 0.3142857142857143,
-      "f1-score": 0.2816326530612245,
+      "precision": 0.31768707482993197,
+      "recall": 0.37142857142857144,
+      "f1-score": 0.3295238095238095,
       "support": 35.0
     }
   },
@@ -143,16 +137,15 @@
     "Pickup",
     "Returns",
     "Shipping Cost",
+    "Tracking",
     "Typos",
     "Weird",
-    "estimated_delivery",
-    "expedite_delivery",
-    "tracking_request"
+    "expedite_delivery"
   ],
   "train_size": 137,
   "test_size": 35,
   "total_samples": 172,
-  "n_intents": 18,
+  "n_intents": 17,
   "split": "80/20 stratified, random_state=42",
   "model": "TF-IDF + LinearSVC",
   "tfidf": {
@@ -170,5 +163,5 @@
     "TF-IDF + LinearSVC",
     "TF-IDF + Logistic Regression"
   ],
-  "comparison_winner_weighted_f1": "TF-IDF + Logistic Regression"
+  "comparison_winner_weighted_f1": "TF-IDF + LinearSVC"
 }
