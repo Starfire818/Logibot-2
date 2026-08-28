@@ -1,0 +1,2 @@
+timestamp_utc,user_message,bot_reply,detected_intent,rating_1_5,helpful_bool,comment
+2026-08-27T19:22:31Z,It's 28 August 2026 today,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.,tracking_request,3,no,Wrong intent

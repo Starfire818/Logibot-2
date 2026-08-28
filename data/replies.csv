@@ -1,0 +1,453 @@
+Intent,Question,ReplyIndex,Reply
+Tracking,Where is my parcel?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Where is my parcel?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Where is my parcel?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Where is my parcel?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,Can you track my shipment?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Can you track my shipment?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Can you track my shipment?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Can you track my shipment?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,My tracking hasn't updated.,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,My tracking hasn't updated.,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,My tracking hasn't updated.,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,My tracking hasn't updated.,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,Is my parcel still moving?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Is my parcel still moving?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Is my parcel still moving?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Is my parcel still moving?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,Why is my parcel stuck?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Why is my parcel stuck?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Why is my parcel stuck?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Why is my parcel stuck?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,What does 'In Transit' mean?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,What does 'In Transit' mean?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,What does 'In Transit' mean?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,What does 'In Transit' mean?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,What does 'Out for Delivery' mean?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,What does 'Out for Delivery' mean?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,What does 'Out for Delivery' mean?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,What does 'Out for Delivery' mean?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,Has my parcel been delivered?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Has my parcel been delivered?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Has my parcel been delivered?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Has my parcel been delivered?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,Can I get today's tracking update?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Can I get today's tracking update?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Can I get today's tracking update?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Can I get today's tracking update?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Tracking,Where exactly is my package now?,1,Thanks for contacting us. I can help track your parcel. Please share your tracking number so I can check the latest shipment status.
+Tracking,Where exactly is my package now?,2,I can look up the most recent tracking update for your shipment. Please send your tracking number or order reference and I will review the latest movement.
+Tracking,Where exactly is my package now?,3,I can check the current shipment status for you. Please provide the tracking number and I will explain exactly where the parcel is right now.
+Tracking,Where exactly is my package now?,4,Thanks for the message. I can help you understand the current parcel status and the next delivery milestone.
+Delivery,When will my parcel arrive?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,When will my parcel arrive?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,When will my parcel arrive?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,When will my parcel arrive?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Can I choose a delivery time?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Can I choose a delivery time?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Can I choose a delivery time?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Can I choose a delivery time?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Is delivery available today?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Is delivery available today?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Is delivery available today?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Is delivery available today?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Why is my delivery late?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Why is my delivery late?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Why is my delivery late?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Why is my delivery late?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,My parcel didn't arrive today.,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,My parcel didn't arrive today.,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,My parcel didn't arrive today.,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,My parcel didn't arrive today.,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Can I collect it myself?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Can I collect it myself?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Can I collect it myself?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Can I collect it myself?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Can the courier call me?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Can the courier call me?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Can the courier call me?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Can the courier call me?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Can you deliver tomorrow instead?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Can you deliver tomorrow instead?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Can you deliver tomorrow instead?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Can you deliver tomorrow instead?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Is weekend delivery available?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Is weekend delivery available?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Is weekend delivery available?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Is weekend delivery available?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Delivery,Do you deliver at night?,1,I can help review the delivery timeline for your parcel. Please share your tracking number so I can check the expected arrival date.
+Delivery,Do you deliver at night?,2,I can help estimate when your parcel should arrive. Please send your order or tracking number and I will check the delivery status.
+Delivery,Do you deliver at night?,3,Thanks for your message. I can help with delivery timing and ETA. Please share your tracking number or order reference for a clearer estimate.
+Delivery,Do you deliver at night?,4,I can review the scheduled delivery window and explain whether the parcel is still on time or delayed.
+Address Change,I entered the wrong address.,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,I entered the wrong address.,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,I entered the wrong address.,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,I entered the wrong address.,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,Can I change my address?,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,Can I change my address?,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,Can I change my address?,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,Can I change my address?,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,My postcode is incorrect.,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,My postcode is incorrect.,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,My postcode is incorrect.,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,My postcode is incorrect.,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,I moved to a new house.,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,I moved to a new house.,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,I moved to a new house.,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,I moved to a new house.,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,Please deliver to my office instead.,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,Please deliver to my office instead.,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,Please deliver to my office instead.,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,Please deliver to my office instead.,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,Can I update my phone number?,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,Can I update my phone number?,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,Can I update my phone number?,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,Can I update my phone number?,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,Can I change the recipient?,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,Can I change the recipient?,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,Can I change the recipient?,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,Can I change the recipient?,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Address Change,I forgot to include my apartment number.,1,I can help with an address change if the parcel has not yet been handed over to the courier. Please send your order number and the updated address.
+Address Change,I forgot to include my apartment number.,2,Address updates may still be possible before dispatch. Please provide your order reference and the correct delivery address.
+Address Change,I forgot to include my apartment number.,3,I can review whether we can update the shipping address. Please share the order number and the new address details.
+Address Change,I forgot to include my apartment number.,4,I can check whether the parcel can still be redirected before it reaches the final courier step.
+Missing Parcel,My parcel is missing.,1,I am sorry to hear that. I can help investigate a missing parcel. Please send the tracking number and delivery details so I can review the case.
+Missing Parcel,My parcel is missing.,2,We can investigate this as a priority. Please provide the tracking number and any delivery information so I can check whether it was misdelivered or lost.
+Missing Parcel,My parcel is missing.,3,I am sorry for the inconvenience. Please share your order reference and tracking number so I can look into the missing parcel.
+Missing Parcel,My parcel is missing.,4,I can help review the delivery history and determine the next investigation step for the missing shipment.
+Missing Parcel,I never received it.,1,I am sorry to hear that. I can help investigate a missing parcel. Please send the tracking number and delivery details so I can review the case.
+Missing Parcel,I never received it.,2,We can investigate this as a priority. Please provide the tracking number and any delivery information so I can check whether it was misdelivered or lost.
+Missing Parcel,I never received it.,3,I am sorry for the inconvenience. Please share your order reference and tracking number so I can look into the missing parcel.
+Missing Parcel,I never received it.,4,I can help review the delivery history and determine the next investigation step for the missing shipment.
+Missing Parcel,It says delivered but I didn't get it.,1,I am sorry to hear that. I can help investigate a missing parcel. Please send the tracking number and delivery details so I can review the case.
+Missing Parcel,It says delivered but I didn't get it.,2,We can investigate this as a priority. Please provide the tracking number and any delivery information so I can check whether it was misdelivered or lost.
+Missing Parcel,It says delivered but I didn't get it.,3,I am sorry for the inconvenience. Please share your order reference and tracking number so I can look into the missing parcel.
+Missing Parcel,It says delivered but I didn't get it.,4,I can help review the delivery history and determine the next investigation step for the missing shipment.
+Missing Parcel,Someone stole my parcel.,1,I am sorry to hear that. I can help investigate a missing parcel. Please send the tracking number and delivery details so I can review the case.
+Missing Parcel,Someone stole my parcel.,2,We can investigate this as a priority. Please provide the tracking number and any delivery information so I can check whether it was misdelivered or lost.
+Missing Parcel,Someone stole my parcel.,3,I am sorry for the inconvenience. Please share your order reference and tracking number so I can look into the missing parcel.
+Missing Parcel,Someone stole my parcel.,4,I can help review the delivery history and determine the next investigation step for the missing shipment.
+Missing Parcel,Can you investigate?,1,I am sorry to hear that. I can help investigate a missing parcel. Please send the tracking number and delivery details so I can review the case.
+Missing Parcel,Can you investigate?,2,We can investigate this as a priority. Please provide the tracking number and any delivery information so I can check whether it was misdelivered or lost.
+Missing Parcel,Can you investigate?,3,I am sorry for the inconvenience. Please share your order reference and tracking number so I can look into the missing parcel.
+Missing Parcel,Can you investigate?,4,I can help review the delivery history and determine the next investigation step for the missing shipment.
+Missing Parcel,Where should I report a missing parcel?,1,I am sorry to hear that. I can help investigate a missing parcel. Please send the tracking number and delivery details so I can review the case.
+Missing Parcel,Where should I report a missing parcel?,2,We can investigate this as a priority. Please provide the tracking number and any delivery information so I can check whether it was misdelivered or lost.
+Missing Parcel,Where should I report a missing parcel?,3,I am sorry for the inconvenience. Please share your order reference and tracking number so I can look into the missing parcel.
+Missing Parcel,Where should I report a missing parcel?,4,I can help review the delivery history and determine the next investigation step for the missing shipment.
+Damaged Parcel,My parcel arrived damaged.,1,"I am sorry your parcel arrived damaged. Please send photos of the package and item, along with your order number, so I can help with the claim."
+Damaged Parcel,My parcel arrived damaged.,2,Thank you for reporting this. I can help you with the damage claim. Please provide the order number and photo evidence.
+Damaged Parcel,My parcel arrived damaged.,3,I can assist with a damaged parcel claim. Please send the order number and photos of the damaged package and item.
+Damaged Parcel,My parcel arrived damaged.,4,I can help you with the compensation process and guide you on the evidence needed for a proper claim.
+Damaged Parcel,The box is crushed.,1,"I am sorry your parcel arrived damaged. Please send photos of the package and item, along with your order number, so I can help with the claim."
+Damaged Parcel,The box is crushed.,2,Thank you for reporting this. I can help you with the damage claim. Please provide the order number and photo evidence.
+Damaged Parcel,The box is crushed.,3,I can assist with a damaged parcel claim. Please send the order number and photos of the damaged package and item.
+Damaged Parcel,The box is crushed.,4,I can help you with the compensation process and guide you on the evidence needed for a proper claim.
+Damaged Parcel,The item inside is broken.,1,"I am sorry your parcel arrived damaged. Please send photos of the package and item, along with your order number, so I can help with the claim."
+Damaged Parcel,The item inside is broken.,2,Thank you for reporting this. I can help you with the damage claim. Please provide the order number and photo evidence.
+Damaged Parcel,The item inside is broken.,3,I can assist with a damaged parcel claim. Please send the order number and photos of the damaged package and item.
+Damaged Parcel,The item inside is broken.,4,I can help you with the compensation process and guide you on the evidence needed for a proper claim.
+Damaged Parcel,Can I get compensation?,1,"I am sorry your parcel arrived damaged. Please send photos of the package and item, along with your order number, so I can help with the claim."
+Damaged Parcel,Can I get compensation?,2,Thank you for reporting this. I can help you with the damage claim. Please provide the order number and photo evidence.
+Damaged Parcel,Can I get compensation?,3,I can assist with a damaged parcel claim. Please send the order number and photos of the damaged package and item.
+Damaged Parcel,Can I get compensation?,4,I can help you with the compensation process and guide you on the evidence needed for a proper claim.
+Damaged Parcel,How do I make a claim?,1,"I am sorry your parcel arrived damaged. Please send photos of the package and item, along with your order number, so I can help with the claim."
+Damaged Parcel,How do I make a claim?,2,Thank you for reporting this. I can help you with the damage claim. Please provide the order number and photo evidence.
+Damaged Parcel,How do I make a claim?,3,I can assist with a damaged parcel claim. Please send the order number and photos of the damaged package and item.
+Damaged Parcel,How do I make a claim?,4,I can help you with the compensation process and guide you on the evidence needed for a proper claim.
+Returns,How do I return my parcel?,1,I can guide you through the return process. Please share your order number and I will explain the available return or refund options.
+Returns,How do I return my parcel?,2,I can help with return requests and refunds. Please send the order reference so I can assess the next step.
+Returns,How do I return my parcel?,3,I can help you with the return or refund process. Please provide your order number and I will review the options.
+Returns,How do I return my parcel?,4,I can check the return eligibility and explain the refund timeline based on your order details.
+Returns,Where is my refund?,1,I can guide you through the return process. Please share your order number and I will explain the available return or refund options.
+Returns,Where is my refund?,2,I can help with return requests and refunds. Please send the order reference so I can assess the next step.
+Returns,Where is my refund?,3,I can help you with the return or refund process. Please provide your order number and I will review the options.
+Returns,Where is my refund?,4,I can check the return eligibility and explain the refund timeline based on your order details.
+Returns,Can I cancel my shipment?,1,I can guide you through the return process. Please share your order number and I will explain the available return or refund options.
+Returns,Can I cancel my shipment?,2,I can help with return requests and refunds. Please send the order reference so I can assess the next step.
+Returns,Can I cancel my shipment?,3,I can help you with the return or refund process. Please provide your order number and I will review the options.
+Returns,Can I cancel my shipment?,4,I can check the return eligibility and explain the refund timeline based on your order details.
+Returns,Who pays for return shipping?,1,I can guide you through the return process. Please share your order number and I will explain the available return or refund options.
+Returns,Who pays for return shipping?,2,I can help with return requests and refunds. Please send the order reference so I can assess the next step.
+Returns,Who pays for return shipping?,3,I can help you with the return or refund process. Please provide your order number and I will review the options.
+Returns,Who pays for return shipping?,4,I can check the return eligibility and explain the refund timeline based on your order details.
+Returns,I changed my mind.,1,I can guide you through the return process. Please share your order number and I will explain the available return or refund options.
+Returns,I changed my mind.,2,I can help with return requests and refunds. Please send the order reference so I can assess the next step.
+Returns,I changed my mind.,3,I can help you with the return or refund process. Please provide your order number and I will review the options.
+Returns,I changed my mind.,4,I can check the return eligibility and explain the refund timeline based on your order details.
+Shipping Cost,How much is shipping?,1,"I can explain the shipping cost. Please share the destination and parcel details, and I will check the fee or any discount that applies."
+Shipping Cost,How much is shipping?,2,"Shipping charges depend on parcel size, destination, and delivery speed. Please share the order details and I can clarify the cost."
+Shipping Cost,How much is shipping?,3,"I can review the shipping fee for you. Please provide the destination and parcel details, and I will check the pricing."
+Shipping Cost,How much is shipping?,4,I can explain the rate structure and let you know whether a promotion or shipping discount is available.
+Shipping Cost,Why is shipping so expensive?,1,"I can explain the shipping cost. Please share the destination and parcel details, and I will check the fee or any discount that applies."
+Shipping Cost,Why is shipping so expensive?,2,"Shipping charges depend on parcel size, destination, and delivery speed. Please share the order details and I can clarify the cost."
+Shipping Cost,Why is shipping so expensive?,3,"I can review the shipping fee for you. Please provide the destination and parcel details, and I will check the pricing."
+Shipping Cost,Why is shipping so expensive?,4,I can explain the rate structure and let you know whether a promotion or shipping discount is available.
+Shipping Cost,Do you offer free shipping?,1,"I can explain the shipping cost. Please share the destination and parcel details, and I will check the fee or any discount that applies."
+Shipping Cost,Do you offer free shipping?,2,"Shipping charges depend on parcel size, destination, and delivery speed. Please share the order details and I can clarify the cost."
+Shipping Cost,Do you offer free shipping?,3,"I can review the shipping fee for you. Please provide the destination and parcel details, and I will check the pricing."
+Shipping Cost,Do you offer free shipping?,4,I can explain the rate structure and let you know whether a promotion or shipping discount is available.
+Shipping Cost,Can I get a discount?,1,"I can explain the shipping cost. Please share the destination and parcel details, and I will check the fee or any discount that applies."
+Shipping Cost,Can I get a discount?,2,"Shipping charges depend on parcel size, destination, and delivery speed. Please share the order details and I can clarify the cost."
+Shipping Cost,Can I get a discount?,3,"I can review the shipping fee for you. Please provide the destination and parcel details, and I will check the pricing."
+Shipping Cost,Can I get a discount?,4,I can explain the rate structure and let you know whether a promotion or shipping discount is available.
+Shipping Cost,Is shipping included?,1,"I can explain the shipping cost. Please share the destination and parcel details, and I will check the fee or any discount that applies."
+Shipping Cost,Is shipping included?,2,"Shipping charges depend on parcel size, destination, and delivery speed. Please share the order details and I can clarify the cost."
+Shipping Cost,Is shipping included?,3,"I can review the shipping fee for you. Please provide the destination and parcel details, and I will check the pricing."
+Shipping Cost,Is shipping included?,4,I can explain the rate structure and let you know whether a promotion or shipping discount is available.
+Pickup,Can you pick up my parcel?,1,I can help with pickup arrangements. Please provide your order reference and preferred pickup time so I can check availability.
+Pickup,Can you pick up my parcel?,2,"Pickup support is available. Please share your location and preferred time, and I will review the options for you."
+Pickup,Can you pick up my parcel?,3,I can help arrange or reschedule a pickup. Please send your order number and availability details so I can check.
+Pickup,Can you pick up my parcel?,4,I can review the collection schedule and help you book or change the pickup slot if possible.
+Pickup,When is pickup available?,1,I can help with pickup arrangements. Please provide your order reference and preferred pickup time so I can check availability.
+Pickup,When is pickup available?,2,"Pickup support is available. Please share your location and preferred time, and I will review the options for you."
+Pickup,When is pickup available?,3,I can help arrange or reschedule a pickup. Please send your order number and availability details so I can check.
+Pickup,When is pickup available?,4,I can review the collection schedule and help you book or change the pickup slot if possible.
+Pickup,I missed the pickup.,1,I can help with pickup arrangements. Please provide your order reference and preferred pickup time so I can check availability.
+Pickup,I missed the pickup.,2,"Pickup support is available. Please share your location and preferred time, and I will review the options for you."
+Pickup,I missed the pickup.,3,I can help arrange or reschedule a pickup. Please send your order number and availability details so I can check.
+Pickup,I missed the pickup.,4,I can review the collection schedule and help you book or change the pickup slot if possible.
+Pickup,Can I reschedule pickup?,1,I can help with pickup arrangements. Please provide your order reference and preferred pickup time so I can check availability.
+Pickup,Can I reschedule pickup?,2,"Pickup support is available. Please share your location and preferred time, and I will review the options for you."
+Pickup,Can I reschedule pickup?,3,I can help arrange or reschedule a pickup. Please send your order number and availability details so I can check.
+Pickup,Can I reschedule pickup?,4,I can review the collection schedule and help you book or change the pickup slot if possible.
+Pickup,Where should I leave my parcel?,1,I can help with pickup arrangements. Please provide your order reference and preferred pickup time so I can check availability.
+Pickup,Where should I leave my parcel?,2,"Pickup support is available. Please share your location and preferred time, and I will review the options for you."
+Pickup,Where should I leave my parcel?,3,I can help arrange or reschedule a pickup. Please send your order number and availability details so I can check.
+Pickup,Where should I leave my parcel?,4,I can review the collection schedule and help you book or change the pickup slot if possible.
+International,Do you ship internationally?,1,I can help with international shipping. Please share the destination and tracking number so I can explain the delivery timeline and customs details.
+International,Do you ship internationally?,2,International delivery can be affected by customs and transit times. Please send your order number so I can review the shipment details.
+International,Do you ship internationally?,3,I can assist with international shipping questions. Please share your destination and tracking information so I can explain the process.
+International,Do you ship internationally?,4,"I can explain customs, duties, and the estimated transit time for international deliveries."
+International,How long does international shipping take?,1,I can help with international shipping. Please share the destination and tracking number so I can explain the delivery timeline and customs details.
+International,How long does international shipping take?,2,International delivery can be affected by customs and transit times. Please send your order number so I can review the shipment details.
+International,How long does international shipping take?,3,I can assist with international shipping questions. Please share your destination and tracking information so I can explain the process.
+International,How long does international shipping take?,4,"I can explain customs, duties, and the estimated transit time for international deliveries."
+International,Is customs included?,1,I can help with international shipping. Please share the destination and tracking number so I can explain the delivery timeline and customs details.
+International,Is customs included?,2,International delivery can be affected by customs and transit times. Please send your order number so I can review the shipment details.
+International,Is customs included?,3,I can assist with international shipping questions. Please share your destination and tracking information so I can explain the process.
+International,Is customs included?,4,"I can explain customs, duties, and the estimated transit time for international deliveries."
+International,Will I pay import tax?,1,I can help with international shipping. Please share the destination and tracking number so I can explain the delivery timeline and customs details.
+International,Will I pay import tax?,2,International delivery can be affected by customs and transit times. Please send your order number so I can review the shipment details.
+International,Will I pay import tax?,3,I can assist with international shipping questions. Please share your destination and tracking information so I can explain the process.
+International,Will I pay import tax?,4,"I can explain customs, duties, and the estimated transit time for international deliveries."
+International,My parcel is stuck at customs.,1,I can help with international shipping. Please share the destination and tracking number so I can explain the delivery timeline and customs details.
+International,My parcel is stuck at customs.,2,International delivery can be affected by customs and transit times. Please send your order number so I can review the shipment details.
+International,My parcel is stuck at customs.,3,I can assist with international shipping questions. Please share your destination and tracking information so I can explain the process.
+International,My parcel is stuck at customs.,4,"I can explain customs, duties, and the estimated transit time for international deliveries."
+International,What documents are needed?,1,I can help with international shipping. Please share the destination and tracking number so I can explain the delivery timeline and customs details.
+International,What documents are needed?,2,International delivery can be affected by customs and transit times. Please send your order number so I can review the shipment details.
+International,What documents are needed?,3,I can assist with international shipping questions. Please share your destination and tracking information so I can explain the process.
+International,What documents are needed?,4,"I can explain customs, duties, and the estimated transit time for international deliveries."
+Payment,Can I pay cash?,1,I can help with payment issues. Please share the payment method and order details so I can check why the transaction was rejected or delayed.
+Payment,Can I pay cash?,2,Thanks for letting us know. I can review the payment concern and explain the available next steps or payment methods.
+Payment,Can I pay cash?,3,I can assist with payment-related issues. Please provide the order number and payment details so I can investigate.
+Payment,Can I pay cash?,4,I can help review the payment problem and advise on the most suitable next step for your order.
+Payment,Do you accept cards?,1,I can help with payment issues. Please share the payment method and order details so I can check why the transaction was rejected or delayed.
+Payment,Do you accept cards?,2,Thanks for letting us know. I can review the payment concern and explain the available next steps or payment methods.
+Payment,Do you accept cards?,3,I can assist with payment-related issues. Please provide the order number and payment details so I can investigate.
+Payment,Do you accept cards?,4,I can help review the payment problem and advise on the most suitable next step for your order.
+Payment,Why was my payment rejected?,1,I can help with payment issues. Please share the payment method and order details so I can check why the transaction was rejected or delayed.
+Payment,Why was my payment rejected?,2,Thanks for letting us know. I can review the payment concern and explain the available next steps or payment methods.
+Payment,Why was my payment rejected?,3,I can assist with payment-related issues. Please provide the order number and payment details so I can investigate.
+Payment,Why was my payment rejected?,4,I can help review the payment problem and advise on the most suitable next step for your order.
+Payment,Can I pay later?,1,I can help with payment issues. Please share the payment method and order details so I can check why the transaction was rejected or delayed.
+Payment,Can I pay later?,2,Thanks for letting us know. I can review the payment concern and explain the available next steps or payment methods.
+Payment,Can I pay later?,3,I can assist with payment-related issues. Please provide the order number and payment details so I can investigate.
+Payment,Can I pay later?,4,I can help review the payment problem and advise on the most suitable next step for your order.
+Payment,Is cash on delivery available?,1,I can help with payment issues. Please share the payment method and order details so I can check why the transaction was rejected or delayed.
+Payment,Is cash on delivery available?,2,Thanks for letting us know. I can review the payment concern and explain the available next steps or payment methods.
+Payment,Is cash on delivery available?,3,I can assist with payment-related issues. Please provide the order number and payment details so I can investigate.
+Payment,Is cash on delivery available?,4,I can help review the payment problem and advise on the most suitable next step for your order.
+Business,I want a business account.,1,"Thank you for your interest in our business services. I can help with bulk shipping, API integration, and warehouse support. Please share your requirements."
+Business,I want a business account.,2,I can assist with business account and bulk shipping inquiries. Please tell me which service you need and I will guide you.
+Business,I want a business account.,3,We can support business customers with bulk shipping and logistics services. Please share your requirements and I will help connect you.
+Business,I want a business account.,4,"I can help with business freight needs, warehouse services, and large-volume shipping arrangements."
+Business,Do you offer bulk shipping?,1,"Thank you for your interest in our business services. I can help with bulk shipping, API integration, and warehouse support. Please share your requirements."
+Business,Do you offer bulk shipping?,2,I can assist with business account and bulk shipping inquiries. Please tell me which service you need and I will guide you.
+Business,Do you offer bulk shipping?,3,We can support business customers with bulk shipping and logistics services. Please share your requirements and I will help connect you.
+Business,Do you offer bulk shipping?,4,"I can help with business freight needs, warehouse services, and large-volume shipping arrangements."
+Business,Can I integrate your API?,1,"Thank you for your interest in our business services. I can help with bulk shipping, API integration, and warehouse support. Please share your requirements."
+Business,Can I integrate your API?,2,I can assist with business account and bulk shipping inquiries. Please tell me which service you need and I will guide you.
+Business,Can I integrate your API?,3,We can support business customers with bulk shipping and logistics services. Please share your requirements and I will help connect you.
+Business,Can I integrate your API?,4,"I can help with business freight needs, warehouse services, and large-volume shipping arrangements."
+Business,Do you have warehouse services?,1,"Thank you for your interest in our business services. I can help with bulk shipping, API integration, and warehouse support. Please share your requirements."
+Business,Do you have warehouse services?,2,I can assist with business account and bulk shipping inquiries. Please tell me which service you need and I will guide you.
+Business,Do you have warehouse services?,3,We can support business customers with bulk shipping and logistics services. Please share your requirements and I will help connect you.
+Business,Do you have warehouse services?,4,"I can help with business freight needs, warehouse services, and large-volume shipping arrangements."
+Business,Can I schedule daily pickups?,1,"Thank you for your interest in our business services. I can help with bulk shipping, API integration, and warehouse support. Please share your requirements."
+Business,Can I schedule daily pickups?,2,I can assist with business account and bulk shipping inquiries. Please tell me which service you need and I will guide you.
+Business,Can I schedule daily pickups?,3,We can support business customers with bulk shipping and logistics services. Please share your requirements and I will help connect you.
+Business,Can I schedule daily pickups?,4,"I can help with business freight needs, warehouse services, and large-volume shipping arrangements."
+Complaint,Your service is terrible.,1,I am sorry to hear this and understand your frustration. Please share your order details so I can review the issue and escalate it properly.
+Complaint,Your service is terrible.,2,We are sorry for the poor experience. Please provide the order reference and a short summary so we can investigate and resolve it.
+Complaint,Your service is terrible.,3,I understand your concern. Please send your order details and I will review the complaint and arrange the next step.
+Complaint,Your service is terrible.,4,I can escalate the issue and make sure the right team reviews the complaint with proper attention.
+Complaint,I'm very disappointed.,1,I am sorry to hear this and understand your frustration. Please share your order details so I can review the issue and escalate it properly.
+Complaint,I'm very disappointed.,2,We are sorry for the poor experience. Please provide the order reference and a short summary so we can investigate and resolve it.
+Complaint,I'm very disappointed.,3,I understand your concern. Please send your order details and I will review the complaint and arrange the next step.
+Complaint,I'm very disappointed.,4,I can escalate the issue and make sure the right team reviews the complaint with proper attention.
+Complaint,I want to complain.,1,I am sorry to hear this and understand your frustration. Please share your order details so I can review the issue and escalate it properly.
+Complaint,I want to complain.,2,We are sorry for the poor experience. Please provide the order reference and a short summary so we can investigate and resolve it.
+Complaint,I want to complain.,3,I understand your concern. Please send your order details and I will review the complaint and arrange the next step.
+Complaint,I want to complain.,4,I can escalate the issue and make sure the right team reviews the complaint with proper attention.
+Complaint,Your courier was rude.,1,I am sorry to hear this and understand your frustration. Please share your order details so I can review the issue and escalate it properly.
+Complaint,Your courier was rude.,2,We are sorry for the poor experience. Please provide the order reference and a short summary so we can investigate and resolve it.
+Complaint,Your courier was rude.,3,I understand your concern. Please send your order details and I will review the complaint and arrange the next step.
+Complaint,Your courier was rude.,4,I can escalate the issue and make sure the right team reviews the complaint with proper attention.
+Complaint,Nobody answered my calls.,1,I am sorry to hear this and understand your frustration. Please share your order details so I can review the issue and escalate it properly.
+Complaint,Nobody answered my calls.,2,We are sorry for the poor experience. Please provide the order reference and a short summary so we can investigate and resolve it.
+Complaint,Nobody answered my calls.,3,I understand your concern. Please send your order details and I will review the complaint and arrange the next step.
+Complaint,Nobody answered my calls.,4,I can escalate the issue and make sure the right team reviews the complaint with proper attention.
+Complaint,I wasted my whole day waiting.,1,I am sorry to hear this and understand your frustration. Please share your order details so I can review the issue and escalate it properly.
+Complaint,I wasted my whole day waiting.,2,We are sorry for the poor experience. Please provide the order reference and a short summary so we can investigate and resolve it.
+Complaint,I wasted my whole day waiting.,3,I understand your concern. Please send your order details and I will review the complaint and arrange the next step.
+Complaint,I wasted my whole day waiting.,4,I can escalate the issue and make sure the right team reviews the complaint with proper attention.
+General,What are your working hours?,1,"I can help with general logistics support. Please tell me what you need, such as office hours, support contact details, or delivery questions."
+General,What are your working hours?,2,"Thank you for your message. I can help with general support questions about our service, contact options, and operating hours."
+General,What are your working hours?,3,I can assist with general support questions. Please let me know what you need help with and I will guide you.
+General,What are your working hours?,4,I can help with general customer support and point you to the most relevant service option.
+General,Are you open today?,1,"I can help with general logistics support. Please tell me what you need, such as office hours, support contact details, or delivery questions."
+General,Are you open today?,2,"Thank you for your message. I can help with general support questions about our service, contact options, and operating hours."
+General,Are you open today?,3,I can assist with general support questions. Please let me know what you need help with and I will guide you.
+General,Are you open today?,4,I can help with general customer support and point you to the most relevant service option.
+General,Where is your office?,1,"I can help with general logistics support. Please tell me what you need, such as office hours, support contact details, or delivery questions."
+General,Where is your office?,2,"Thank you for your message. I can help with general support questions about our service, contact options, and operating hours."
+General,Where is your office?,3,I can assist with general support questions. Please let me know what you need help with and I will guide you.
+General,Where is your office?,4,I can help with general customer support and point you to the most relevant service option.
+General,How can I contact support?,1,"I can help with general logistics support. Please tell me what you need, such as office hours, support contact details, or delivery questions."
+General,How can I contact support?,2,"Thank you for your message. I can help with general support questions about our service, contact options, and operating hours."
+General,How can I contact support?,3,I can assist with general support questions. Please let me know what you need help with and I will guide you.
+General,How can I contact support?,4,I can help with general customer support and point you to the most relevant service option.
+General,Do you have live chat?,1,"I can help with general logistics support. Please tell me what you need, such as office hours, support contact details, or delivery questions."
+General,Do you have live chat?,2,"Thank you for your message. I can help with general support questions about our service, contact options, and operating hours."
+General,Do you have live chat?,3,I can assist with general support questions. Please let me know what you need help with and I will guide you.
+General,Do you have live chat?,4,I can help with general customer support and point you to the most relevant service option.
+Weird,Can you teleport my package?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can you teleport my package?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can you teleport my package?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can you teleport my package?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Did the courier eat my package?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Did the courier eat my package?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Did the courier eat my package?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Did the courier eat my package?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can you deliver to the moon?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can you deliver to the moon?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can you deliver to the moon?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can you deliver to the moon?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can you ship a dinosaur?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can you ship a dinosaur?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can you ship a dinosaur?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can you ship a dinosaur?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can I send my grandma?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can I send my grandma?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can I send my grandma?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can I send my grandma?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can I track my future parcel?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can I track my future parcel?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can I track my future parcel?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can I track my future parcel?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,My parcel is invisible.,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,My parcel is invisible.,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,My parcel is invisible.,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,My parcel is invisible.,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can you stop time until my parcel arrives?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can you stop time until my parcel arrives?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can you stop time until my parcel arrives?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can you stop time until my parcel arrives?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,My package is haunted.,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,My package is haunted.,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,My package is haunted.,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,My package is haunted.,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can my dog sign for the parcel?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can my dog sign for the parcel?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can my dog sign for the parcel?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can my dog sign for the parcel?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can you deliver underwater?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can you deliver underwater?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can you deliver underwater?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can you deliver underwater?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Is my parcel allergic to rain?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Is my parcel allergic to rain?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Is my parcel allergic to rain?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Is my parcel allergic to rain?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Weird,Can I send my homework instead?,1,"I cannot process impossible or fictional delivery requests, but I can still help with genuine logistics questions such as tracking, delivery, and parcel issues."
+Weird,Can I send my homework instead?,2,"That request is not something we can fulfill, but I can help with real shipment and delivery inquiries. Please share your actual order details."
+Weird,Can I send my homework instead?,3,"I’m unable to arrange impossible deliveries, but I can absolutely assist with real parcel tracking, delivery timing, or shipment issues."
+Weird,Can I send my homework instead?,4,"I can still help with a real logistics request, even if the message itself sounds unusual or playful."
+Typos,Wher is my pakage?,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Wher is my pakage?,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Wher is my pakage?,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Wher is my pakage?,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Track pls,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Track pls,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Track pls,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Track pls,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Parcel??,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Parcel??,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Parcel??,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Parcel??,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Hello??,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Hello??,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Hello??,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Hello??,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Anyone there?,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Anyone there?,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Anyone there?,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Anyone there?,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Help,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Help,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Help,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Help,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Late again,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Late again,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Late again,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Late again,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,No update,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,No update,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,No update,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,No update,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Why????,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Why????,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Why????,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Why????,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,Fix it,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,Fix it,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,Fix it,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,Fix it,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Typos,ASAP please,1,Thanks for the message. I understand you are asking about a shipment or parcel concern. Please share your tracking number or order details so I can help.
+Typos,ASAP please,2,I think you need support for a shipment question. Please send your order or tracking number and I will review it for you.
+Typos,ASAP please,3,I understand you are looking for help with a parcel issue. Please provide the tracking or order details and I will assist.
+Typos,ASAP please,4,I can still understand your message and help work out the parcel issue even if the text is brief or misspelled.
+Angry,This is unacceptable!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,This is unacceptable!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,This is unacceptable!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,This is unacceptable!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,I want my money back!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,I want my money back!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,I want my money back!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,I want my money back!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,I'm never using your service again!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,I'm never using your service again!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,I'm never using your service again!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,I'm never using your service again!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,Where is my package?!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,Where is my package?!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,Where is my package?!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,Where is my package?!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,This is ridiculous!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,This is ridiculous!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,This is ridiculous!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,This is ridiculous!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,Explain this now!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,Explain this now!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,Explain this now!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,Explain this now!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,I've been waiting for days!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,I've been waiting for days!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,I've been waiting for days!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,I've been waiting for days!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.
+Angry,Your company is useless!,1,I am very sorry for the inconvenience and understand your frustration. Please share your order number or tracking details so I can investigate and resolve this as quickly as possible.
+Angry,Your company is useless!,2,We are sorry for the delay and frustration this has caused. Please send the order reference and I will review the case urgently.
+Angry,Your company is useless!,3,I understand why you are upset. Please provide your order or tracking details and I will investigate this as a priority.
+Angry,Your company is useless!,4,I can help escalate the issue and make sure the case is reviewed with the urgency it deserves.

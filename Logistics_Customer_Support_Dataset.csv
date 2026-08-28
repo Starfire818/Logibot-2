@@ -1,0 +1,175 @@
+Intent,Question
+tracking_request,Where is my parcel?
+tracking_request,Can you track my shipment?
+tracking_request,My tracking hasn't updated.
+tracking_request,Is my parcel still moving?
+tracking_request,Why is my parcel stuck?
+tracking_request,What does 'In Transit' mean?
+tracking_request,What does 'Out for Delivery' mean?
+tracking_request,Has my parcel been delivered?
+tracking_request,Can I get today's tracking update?
+tracking_request,Where exactly is my package now?
+estimated_delivery,When will my parcel arrive?
+Delivery,Can I choose a delivery time?
+Delivery,Is delivery available today?
+Delivery,Why is my delivery late?
+Delivery,My parcel didn't arrive today.
+Delivery,Can I collect it myself?
+Delivery,Can the courier call me?
+Delivery,Can you deliver tomorrow instead?
+Delivery,Is weekend delivery available?
+Delivery,Do you deliver at night?
+Address Change,I entered the wrong address.
+Address Change,Can I change my address?
+Address Change,My postcode is incorrect.
+Address Change,I moved to a new house.
+Address Change,Please deliver to my office instead.
+Address Change,Can I update my phone number?
+Address Change,Can I change the recipient?
+Address Change,I forgot to include my apartment number.
+Missing Parcel,My parcel is missing.
+Missing Parcel,I never received it.
+Missing Parcel,It says delivered but I didn't get it.
+Missing Parcel,Someone stole my parcel.
+Missing Parcel,Can you investigate?
+Missing Parcel,Where should I report a missing parcel?
+Damaged Parcel,My parcel arrived damaged.
+Damaged Parcel,The box is crushed.
+Damaged Parcel,The item inside is broken.
+Damaged Parcel,Can I get compensation?
+Damaged Parcel,How do I make a claim?
+Returns,How do I return my parcel?
+Returns,Where is my refund?
+Returns,Can I cancel my shipment?
+Returns,Who pays for return shipping?
+Returns,I changed my mind.
+Shipping Cost,How much is shipping?
+Shipping Cost,Why is shipping so expensive?
+Shipping Cost,Do you offer free shipping?
+Shipping Cost,Can I get a discount?
+Shipping Cost,Is shipping included?
+Pickup,Can you pick up my parcel?
+Pickup,When is pickup available?
+Pickup,I missed the pickup.
+Pickup,Can I reschedule pickup?
+Pickup,Where should I leave my parcel?
+International,Do you ship internationally?
+International,How long does international shipping take?
+International,Is customs included?
+International,Will I pay import tax?
+International,My parcel is stuck at customs.
+International,What documents are needed?
+Payment,Can I pay cash?
+Payment,Do you accept cards?
+Payment,Why was my payment rejected?
+Payment,Can I pay later?
+Payment,Is cash on delivery available?
+Business,I want a business account.
+Business,Do you offer bulk shipping?
+Business,Can I integrate your API?
+Business,Do you have warehouse services?
+Business,Can I schedule daily pickups?
+Complaint,Your service is terrible.
+Complaint,I'm very disappointed.
+Complaint,I want to complain.
+Complaint,Your courier was rude.
+Complaint,Nobody answered my calls.
+Complaint,I wasted my whole day waiting.
+General,What are your working hours?
+General,Are you open today?
+General,Where is your office?
+General,How can I contact support?
+General,Do you have live chat?
+Weird,Can you teleport my package?
+Weird,Did the courier eat my package?
+Weird,Can you deliver to the moon?
+Weird,Can you ship a dinosaur?
+Weird,Can I send my grandma?
+Weird,Can you send my parcel through a time machine?
+Weird,My parcel is invisible.
+Weird,Can you stop time until my parcel arrives?
+Weird,My package is haunted.
+Weird,Can my dog sign for the parcel?
+Weird,Can you deliver underwater?
+Weird,Is my parcel allergic to rain?
+Weird,Can I send my homework instead?
+Typos,Wher is my pakage?
+Typos,Trck plz
+Typos,Parcel??
+Typos,Hello??
+Typos,Anyone there?
+Typos,Help
+Typos,Late again
+Typos,No update
+Typos,Why????
+Typos,Fix it
+Typos,ASAP please
+Angry,This is unacceptable!
+Angry,I want my money back!
+Angry,I'm never using your service again!
+Angry,Where is my package?!
+Angry,This is ridiculous!
+Angry,Explain this now!
+Angry,I've been waiting for days!
+Angry,Your company is useless!
+estimated_delivery,When will my parcel arrived?
+Missing Parcel,But I have not received it
+Typos,Can you fix it
+tracking_request,我的包裹在哪里？
+tracking_request,我想查快递状态
+estimated_delivery,我的包裹什么时候到？
+Missing Parcel,我还没有收到包裹
+Typos,修复一下
+General,这些句子无法被chatbot理解
+General,解决一下
+General,然后我要他聪明一点
+tracking_request,Where's my parcel?
+tracking_request,Can you find my package?
+tracking_request,I need an update on my shipment
+estimated_delivery,Is my parcel arriving today?
+estimated_delivery,When should I expect my delivery?
+estimated_delivery,What time will my package be delivered?
+Missing Parcel,I still haven't received my order
+Missing Parcel,It says delivered but I didn't get it
+Missing Parcel,My package never arrived
+Typos,my parcel not come
+Typos,please fix my order status
+tracking_request,我的快递到哪了
+estimated_delivery,包裹什么时候送到
+Missing Parcel,商家显示已签收但我没收到
+Typos,帮我修一下
+General,请帮我查一下包裹
+estimated_delivery,什么时候能收到我的包裹
+tracking_request,包裹状态更新了吗
+estimated_delivery,预计何时送达
+Missing Parcel,快递没送到我手上
+Typos,系统无法识别这些句子
+tracking_request,我想知道快递现在在哪
+tracking_request,Track my parcel
+tracking_request,Track order
+tracking_request,Track my order
+tracking_request,Track my package
+tracking_request,Please track my parcel
+tracking_request,Can you track my order?
+estimated_delivery,When will it arrive?
+estimated_delivery,When will it be delivered?
+estimated_delivery,When will my parcel arrive?
+estimated_delivery,When will TRK1010 arrive?
+estimated_delivery,What is the estimated delivery time?
+estimated_delivery,几时到？
+estimated_delivery,几时到
+estimated_delivery,什么时候送到？
+expedite_delivery,Speed up delivery
+expedite_delivery,Speed up delivery TRK1010
+expedite_delivery,Can you expedite my delivery?
+expedite_delivery,Please rush my parcel
+expedite_delivery,Make the delivery faster
+expedite_delivery,I need express delivery
+expedite_delivery,Can you speed up my order?
+expedite_delivery,Please expedite this shipment
+expedite_delivery,Speed up my delivery
+expedite_delivery,Please speed up delivery
+tracking_request,Track my parcel please
+tracking_request,I want to track my parcel
+tracking_request,Track order please
+

@@ -1,0 +1,43 @@
+{
+  "total_rows": 173,
+  "missing_utterances": 0,
+  "missing_intent_labels": 0,
+  "empty_text": 0,
+  "duplicate_rows": 1,
+  "duplicate_utterances": 1,
+  "conflicting_duplicate_utterances": 0,
+  "n_intents": 18,
+  "samples_per_intent": {
+    "tracking_request": 27,
+    "estimated_delivery": 17,
+    "Typos": 17,
+    "Weird": 13,
+    "Missing Parcel": 13,
+    "expedite_delivery": 10,
+    "General": 9,
+    "Delivery": 9,
+    "Address Change": 8,
+    "Angry": 8,
+    "Complaint": 6,
+    "International": 6,
+    "Returns": 5,
+    "Shipping Cost": 5,
+    "Pickup": 5,
+    "Damaged Parcel": 5,
+    "Payment": 5,
+    "Business": 5
+  },
+  "class_imbalance_ratio_max_over_min": 5.4,
+  "class_imbalance_note": "LinearSVC is trained with class_weight='balanced'. Rows were not deleted.",
+  "actions_taken": [
+    "Exact duplicate (intent, utterance) pairs are dropped only for the train/test split to reduce leakage.",
+    "Conflicting labels and rare classes are kept and reported, not auto-deleted."
+  ],
+  "rows_after_exact_duplicate_drop_for_split": 172,
+  "exact_duplicates_removed_for_split_only": 1,
+  "train_test_leakage": {
+    "overlapping_utterances": 0,
+    "examples": [],
+    "note": "No identical utterances appear in both the train and test splits."
+  }
+}

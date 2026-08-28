@@ -1,0 +1,174 @@
+{
+  "accuracy": 0.3142857142857143,
+  "precision_macro": 0.24074074074074073,
+  "recall_macro": 0.24444444444444446,
+  "f1_macro": 0.21587301587301588,
+  "precision_weighted": 0.33333333333333337,
+  "recall_weighted": 0.3142857142857143,
+  "f1_weighted": 0.2816326530612245,
+  "classification_report": {
+    "Address Change": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "Angry": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "Business": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Complaint": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Damaged Parcel": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Delivery": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "General": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "International": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Missing Parcel": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 3.0
+    },
+    "Payment": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Pickup": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "Returns": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Shipping Cost": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Typos": {
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1-score": 0.4,
+      "support": 3.0
+    },
+    "Weird": {
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
+      "support": 3.0
+    },
+    "estimated_delivery": {
+      "precision": 0.25,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.2857142857142857,
+      "support": 3.0
+    },
+    "expedite_delivery": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 2.0
+    },
+    "tracking_request": {
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1-score": 0.5,
+      "support": 5.0
+    },
+    "accuracy": 0.3142857142857143,
+    "macro avg": {
+      "precision": 0.24074074074074073,
+      "recall": 0.24444444444444446,
+      "f1-score": 0.21587301587301588,
+      "support": 35.0
+    },
+    "weighted avg": {
+      "precision": 0.33333333333333337,
+      "recall": 0.3142857142857143,
+      "f1-score": 0.2816326530612245,
+      "support": 35.0
+    }
+  },
+  "labels": [
+    "Address Change",
+    "Angry",
+    "Business",
+    "Complaint",
+    "Damaged Parcel",
+    "Delivery",
+    "General",
+    "International",
+    "Missing Parcel",
+    "Payment",
+    "Pickup",
+    "Returns",
+    "Shipping Cost",
+    "Typos",
+    "Weird",
+    "estimated_delivery",
+    "expedite_delivery",
+    "tracking_request"
+  ],
+  "train_size": 137,
+  "test_size": 35,
+  "total_samples": 172,
+  "n_intents": 18,
+  "split": "80/20 stratified, random_state=42",
+  "model": "TF-IDF + LinearSVC",
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 8000,
+    "stop_words": "domain-safe list applied in the tokenizer (articles/copulas; WH-words kept)"
+  },
+  "preprocessing": "clean + lowercase + tokenize + English stop-word removal + WordNet lemmatization",
+  "confusion_matrix_csv": "data/nlp\\confusion_matrix.csv",
+  "confusion_matrix_png": "data/nlp\\confusion_matrix.png",
+  "comparison_models": [
+    "TF-IDF + LinearSVC",
+    "TF-IDF + Logistic Regression"
+  ],
+  "comparison_winner_weighted_f1": "TF-IDF + Logistic Regression"
+}

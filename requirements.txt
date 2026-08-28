@@ -1,0 +1,15 @@
+streamlit
+nltk
+numpy
+pandas
+scikit-learn
+scipy
+joblib
+langsmith
+python-dotenv
+requests
+pydantic
+pyyaml
+tqdm
+rich
+pillow
