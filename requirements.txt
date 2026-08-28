@@ -1,9 +1,3 @@
-streamlit
-nltk
-numpy
-pandas
-scikit-learn
-scipy
 joblib
 langsmith
 python-dotenv
@@ -12,4 +6,11 @@ pydantic
 pyyaml
 tqdm
 rich
+streamlit>=1.38,<2
+nltk>=3.8,<4
+numpy<2
+pandas<3
+scikit-learn==1.7.2
+scipy<1.14
 pillow
+toml

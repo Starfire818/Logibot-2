@@ -12,51 +12,47 @@ from chatbot import LogisticsChatbot
 
 # (packaged-build feedback preview marker)
 # Persistence status + recent feedback preview (packaged build only).
-{
-    import streamlit as _st
+try:
+    from chatbot import _persistence_status as _pstat
+    _s = _pstat()
+    with st.sidebar.expander("\U0001F4BE Feedback Persistence", expanded=True):
+        _tiers = ["\u2705 Local CSV (session only)"]
+        if _s.get("gsheets_configured"):
+            _tiers.append("\U0001F7E9 Google Sheets (permanent)")
+        else:
+            _tiers.append("\u26AA Google Sheets (not configured)")
+        if _s.get("github_configured"):
+            _tiers.append("\U0001F7E5 GitHub CSV commit (permanent)")
+        else:
+            _tiers.append("\u26AA GitHub CSV commit (not configured)")
+        for _t in _tiers:
+            st.markdown(f"- {_t}")
+        if not _s.get("gsheets_configured") and not _s.get("github_configured"):
+            st.caption("Local-only persistence: rows will be LOST on Streamlit Cloud restart. Configure one of the two remote backends above in the app's Secrets settings to make feedback permanent.")
+        else:
+            st.caption("Rows written locally AND mirrored to the cloud — survive Streamlit restarts.")
+    # Preview the 10 most recent feedback rows (reads from local CSV which
+    # is the authoritatively available store within this container).
+    import os as _os
+    _fb_path = "data/user_feedback.csv"
     try:
-        from chatbot import _persistence_status as _pstat
-        _s = _pstat()
-        _with_sb = _st.sidebar.expander("\U0001F4BE Feedback Persistence", expanded=True)
-        with _with_sb:
-            _tiers = ["\u2705 Local CSV (session only)"]
-            if _s.get("gsheets_configured"):
-                _tiers.append("\U0001F7E9 Google Sheets (permanent)")
-            else:
-                _tiers.append("\u26AA Google Sheets (not configured)")
-            if _s.get("github_configured"):
-                _tiers.append("\U0001F7E5 GitHub CSV commit (permanent)")
-            else:
-                _tiers.append("\u26AA GitHub CSV commit (not configured)")
-            for _t in _tiers:
-                _st.markdown(f"- {_t}")
-            if not _s.get("gsheets_configured") and not _s.get("github_configured"):
-                _st.caption("Local-only persistence: rows will be LOST on Streamlit Cloud restart. Configure one of the two remote backends above in the app's Secrets settings to make feedback permanent.")
-            else:
-                _st.caption("Rows written locally AND mirrored to the cloud — survive Streamlit restarts.")
-        # Preview the 10 most recent feedback rows (reads from local CSV which
-        # is the authoritatively available store within this container).
-        import os as _os
-        _fb_path = "data/user_feedback.csv"
+        from chatbot import _resolve_path as _rp; _fb_path = _rp(_fb_path)
+    except Exception:  # noqa: BLE001
+        pass
+    if _os.path.isfile(_fb_path):
+        import pandas as _pd
         try:
-            from chatbot import _resolve_path as _rp; _fb_path = _rp(_fb_path)
+            _df = _pd.read_csv(_fb_path)
+            if not _df.empty:
+                _count = min(10, len(_df))
+                _recent = _df.tail(_count).iloc[::-1].reset_index(drop=True)
+                with st.sidebar.expander(f"\U0001F4CB Recent feedback (last {_count})", expanded=False):
+                    _cols_subset = [c for c in ["timestamp_utc","rating_1_5","helpful_bool","detected_intent","comment","user_message"] if c in _recent.columns]
+                    st.dataframe(_recent[_cols_subset] if _cols_subset else _recent, use_container_width=True, height=260)
         except Exception:  # noqa: BLE001
             pass
-        if _os.path.isfile(_fb_path):
-            import pandas as _pd
-            try:
-                _df = _pd.read_csv(_fb_path)
-                if not _df.empty:
-                    _count = min(10, len(_df))
-                    _recent = _df.tail(_count).iloc[::-1].reset_index(drop=True)
-                    _exp = _st.sidebar.expander(f"\U0001F4CB Recent feedback (last {_count})", expanded=False)
-                    with _exp:
-                        _cols_subset = [c for c in ["timestamp_utc","rating_1_5","helpful_bool","detected_intent","comment","user_message"] if c in _recent.columns]
-                        _st.dataframe(_recent[_cols_subset] if _cols_subset else _recent, use_container_width=True, height=260)
-            except Exception:  # noqa: BLE001
-                pass
-        del _st
-}
+except Exception:  # noqa: BLE001
+    pass
 
 
 
