@@ -244,7 +244,7 @@ with col1:
     <div class='chatbot-card'>
         <div class='card-icon'>🤖</div>
         <div class='card-title'>LogiBot</div>
-        <div class='card-description'>AI Logistics Customer Support</div>
+        <div class='card-description'>LogiBot Customer Support</div>
     </div>
     """, unsafe_allow_html=True)
     
